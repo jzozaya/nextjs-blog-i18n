@@ -3,7 +3,7 @@ import path from 'path';
 import { slug } from 'github-slugger';
 import { escape } from 'pliny/utils/htmlEscaper.js';
 import siteMetadata from '../data/siteMetadata.js';
-import tagData from '../app/[locale]/tag-data.json' assert { type: 'json' };
+// import tagData from '../app/[locale]/tag-data.json' assert { type: 'json' };
 import { allBlogs } from '../.contentlayer/generated/index.mjs';
 import { sortPosts } from 'pliny/utils/contentlayer.js';
 
@@ -50,17 +50,17 @@ async function generateRSS(config, allBlogs, locale, page = 'feed.xml') {
   }
 
   // RSS for tag-specific posts
-  for (const tag of Object.keys(tagData)) {
-    const filteredTagPosts = publishPosts.filter((post) =>
-      post.tags.map((t) => slug(t)).includes(tag)
-    );
-    if (filteredTagPosts.length > 0) {
-      const rss = generateRss(config, sortPosts(filteredTagPosts), locale, `tags/${tag}/${page}`);
-      const rssPath = path.join('public', locale, 'tags', tag);
-      mkdirSync(rssPath, { recursive: true }); // Create the directory if it doesn't exist
-      writeFileSync(path.join(rssPath, page), rss);
-    }
-  }
+  // for (const tag of Object.keys(tagData)) {
+  //   const filteredTagPosts = publishPosts.filter((post) =>
+  //     post.tags.map((t) => slug(t)).includes(tag)
+  //   );
+  //   if (filteredTagPosts.length > 0) {
+  //     const rss = generateRss(config, sortPosts(filteredTagPosts), locale, `tags/${tag}/${page}`);
+  //     const rssPath = path.join('public', locale, 'tags', tag);
+  //     mkdirSync(rssPath, { recursive: true }); // Create the directory if it doesn't exist
+  //     writeFileSync(path.join(rssPath, page), rss);
+  //   }
+  // }
 }
 
 const rss = async () => {
