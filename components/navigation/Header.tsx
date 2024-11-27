@@ -25,9 +25,9 @@ const Header = () => {
         <div>
           <Link href={`/${locale}/`} aria-label={siteMetadata.headerTitle}>
             <div className="flex items-center justify-between">
-              <div className="mr-3">
+              {/* <div className="mr-3">
                 <Logo />
-              </div>
+              </div> */}
               {typeof siteMetadata.headerTitle === 'string' ? (
                 <div className="hidden h-6 text-2xl font-semibold sm:block">
                   {siteMetadata.headerTitle}
@@ -49,7 +49,7 @@ const Header = () => {
                 <Link
                   key={link.title}
                   href={`/${locale}${link.href}`}
-                  className="flex transform-gpu items-center space-x-1 transition-transform duration-300"
+                  className="flex items-center space-x-1 transition-transform duration-300 transform-gpu"
                 >
                   <div
                     className={`hidden font-medium ${
@@ -63,7 +63,7 @@ const Header = () => {
                       <motion.span
                         layoutId="tab"
                         transition={{ type: 'spring', duration: 0.4 }}
-                        className="absolute inset-0 z-0 rounded-md bg-gray-100 dark:bg-gray-600"
+                        className="absolute inset-0 z-0 bg-gray-100 rounded-md dark:bg-gray-600"
                       ></motion.span>
                     )}
                   </div>
