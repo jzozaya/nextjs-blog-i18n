@@ -1,10 +1,10 @@
 {
-  "greeting": "Latest",
-  "description": "A blog created to document and share learnings and experiences.",
+  "greeting": "Reciente",
+  "description": "Un blog creado para documentar y compartir aprendizaes y experiencias.",
   "more": "Read more",
   "all": "All posts",
   "moreaboutme": "More about me",
-  "featured": "Featured",
+  "featured": "Destacado",
   "morefeatured": "More featured posts",
   "morerecent": "More recent posts",
   "search": "Search articles",
