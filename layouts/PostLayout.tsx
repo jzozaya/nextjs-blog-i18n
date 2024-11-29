@@ -73,7 +73,7 @@ export default async function PostLayout({
             </div>
           </header>
           <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0">
-            <dl className="pb-10 pt-6 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
+            <dl className="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
               <dt className="sr-only">{t('authors')}</dt>
               <dd>
                 <ul className="flex flex-wrap justify-center gap-4 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
@@ -87,11 +87,11 @@ export default async function PostLayout({
                             height={38}
                             alt="avatar"
                             title="avatar"
-                            className="h-10 w-10 rounded-full"
+                            className="w-10 h-10 rounded-full"
                           />
                         </Link>
                       )}
-                      <dl className="whitespace-nowrap text-sm font-medium leading-5">
+                      <dl className="text-sm font-medium leading-5 whitespace-nowrap">
                         <dt className="sr-only">{t('name')}</dt>
                         <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>
                         <dt className="sr-only">Twitter</dt>
@@ -113,12 +113,12 @@ export default async function PostLayout({
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
               {series && (
-                <div className="not-prose mt-4">
+                <div className="mt-4 not-prose">
                   <PostSeriesBox data={series} />
                 </div>
               )}
-              <div className="prose max-w-none pb-8 pt-10 dark:prose-invert">{children}</div>
-              <div className="pb-6 pt-6 text-sm text-gray-700 dark:text-gray-300">
+              <div className="pt-10 pb-8 prose max-w-none dark:prose-invert">{children}</div>
+              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
                 <Link href={discussUrl(path)} rel="nofollow">
                   {t('twitter')}
                 </Link>
@@ -127,7 +127,7 @@ export default async function PostLayout({
               </div>
               <Share title={title} slug={slug} />
               <div
-                className="mt-10 pb-6 pt-6 text-center text-gray-700 dark:text-gray-300"
+                className="pt-6 pb-6 mt-10 text-center text-gray-700 dark:text-gray-300"
                 id="comment"
               >
                 {siteMetadata.iswaline === true && <WalineComments />}
@@ -137,10 +137,10 @@ export default async function PostLayout({
               </div>
             </div>
             <footer>
-              <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
+              <div className="text-sm font-medium leading-5 divide-gray-200 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
                 {tags && (
                   <div className="py-4 xl:py-8">
-                    <p className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                    <p className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
                       Tags
                     </p>
                     <div className="flex flex-wrap">
@@ -154,7 +154,7 @@ export default async function PostLayout({
                   <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
                     {prev && prev.slug && (
                       <div>
-                        <p className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                        <p className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
                           {t('preva')}
                         </p>
                         <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
@@ -164,7 +164,7 @@ export default async function PostLayout({
                     )}
                     {next && next.slug && (
                       <div>
-                        <p className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                        <p className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
                           {t('nexta')}
                         </p>
                         <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
