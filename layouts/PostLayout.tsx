@@ -81,14 +81,14 @@ export default async function PostLayout({
                     <li className="flex items-center space-x-2" key={author.name}>
                       {author.avatar && (
                         <Link href={`/${locale}/about/${author.slug}`}>
-                          <Image
+                          {/* <Image
                             src={author.avatar}
                             width={38}
                             height={38}
                             alt="avatar"
                             title="avatar"
                             className="w-10 h-10 rounded-full"
-                          />
+                          /> */}
                         </Link>
                       )}
                       <dl className="text-sm font-medium leading-5 whitespace-nowrap">

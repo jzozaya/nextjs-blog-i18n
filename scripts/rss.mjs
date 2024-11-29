@@ -64,7 +64,7 @@ async function generateRSS(config, allBlogs, locale, page = 'feed.xml') {
 }
 
 const rss = async () => {
-  const locales = ['en', 'fr'];
+  const locales = ['en', 'es'];
   for (const locale of locales) {
     await generateRSS(siteMetadata, allBlogs, locale);
   }
