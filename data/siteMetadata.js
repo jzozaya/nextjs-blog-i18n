@@ -95,7 +95,7 @@ const siteMetadata = {
   // formspree support :
   //if set to false, simple "mailto"
   // if set to true, get a free account there : https://formspree.io/ and go to read.me doc
-  formspree: true,
+  formspree: false,
   // waline support
   iswaline: false,
   walineServer: '',
