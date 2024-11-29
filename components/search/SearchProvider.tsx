@@ -109,19 +109,19 @@ export const SearchProvider = ({ children }: SearchProviderProps) => {
               </i>
             ),
           },
-          {
-            id: 'projects',
-            name: locale === fallbackLng ? 'Projects' : 'Projets',
-            keywords: '',
-            shortcut: ['p'],
-            section: navigationSection,
-            perform: () => router.push(`/${locale}/projects`),
-            icon: (
-              <i>
-                <ProjectsIcon />
-              </i>
-            ),
-          },
+          // {
+          //   id: 'projects',
+          //   name: locale === fallbackLng ? 'Projects' : 'Projets',
+          //   keywords: '',
+          //   shortcut: ['p'],
+          //   section: navigationSection,
+          //   perform: () => router.push(`/${locale}/projects`),
+          //   icon: (
+          //     <i>
+          //       <ProjectsIcon />
+          //     </i>
+          //   ),
+          // },
           ...authorsActions,
         ],
         onSearchDocumentsLoad(json) {
