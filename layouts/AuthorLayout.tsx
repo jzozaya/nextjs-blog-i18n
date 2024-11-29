@@ -49,7 +49,7 @@ export default async function AuthorLayout({
               <SocialIcon kind="x" href={twitter} />
             </div> */}
           </div>
-          <div className="pt-8 pb-8 prose max-w-none dark:prose-invert xl:col-span-2">
+          <div className="pt-8 pb-8 prose max-w-none dark:prose-invert xl:col-span-2 xl:px-4">
             {children}
           </div>
         </div>

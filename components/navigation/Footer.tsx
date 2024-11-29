@@ -30,7 +30,7 @@ export default function Footer() {
     <>
       <footer>
         <div className="flex flex-col items-center mt-16">
-          <div className="flex mb-3 space-x-6">
+          <div className="flex mb-6 space-x-6">
             <div className="flex items-center">
               {siteMetadata.formspree === false ? (
                 <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size={6} />

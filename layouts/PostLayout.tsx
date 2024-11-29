@@ -112,6 +112,7 @@ export default async function PostLayout({
                 </ul>
               </dd>
             </dl>
+            
             {/* Post body begins */}
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0 xl:px-8">
               {series && (
