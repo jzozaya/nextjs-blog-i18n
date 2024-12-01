@@ -2,6 +2,7 @@ import { createTranslation } from 'app/[locale]/i18n/server'
 import { LocaleTypes } from 'app/[locale]/i18n/settings'
 import PostList from './home/PostList'
 import LayoutHeader from './home/LayoutHeader'
+import SectionContainer from '@/components/SectionContainer'
 
 interface Post {
   slug: string
@@ -25,10 +26,12 @@ export default async function FeaturedLayout({ posts, params: { locale } }: Home
   const { t } = await createTranslation(locale, 'home')
   return (
     <>
-      <div className="border divide-y divide-gray-200 dark:divide-gray-700">
-        <LayoutHeader title={t('featured')} />
-        <PostList posts={posts} locale={locale} t={t} maxDisplay={MAX_DISPLAY} />
-      </div>
+      <SectionContainer>
+        <div className="divide-y divide-gray-200 dark:divide-gray-700">
+          <LayoutHeader title={t('featured')} />
+          <PostList posts={posts} locale={locale} t={t} maxDisplay={MAX_DISPLAY} />
+        </div>
+      </SectionContainer>
     </>
   )
 }
