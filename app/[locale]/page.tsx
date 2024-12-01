@@ -48,11 +48,10 @@ export default async function Page({ params: { locale } }: HomeProps) {
             </div>
             <div className="text-center">
               <h1 className="text-5xl font-semibold tracking-tight text-white text-balance sm:text-7xl">
-                Data to enrich your online business
+                Turning bold ideas into seamless digital experiences
               </h1>
               <p className="mt-8 text-lg font-medium text-gray-400 text-pretty sm:text-xl/8">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                fugiat veniam occaecat.
+                From immersive AI-driven campaigns to tools that empower content creators, I design and develop innovative solutions that connect brands with their audience—effortlessly.
               </p>
               <div className="flex items-center justify-center mt-10 gap-x-6">
                 <a
@@ -126,11 +125,14 @@ export default async function Page({ params: { locale } }: HomeProps) {
             <div className="max-w-2xl mx-auto gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
               <div className="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
                 <h1 className="text-5xl font-semibold tracking-tight text-white text-pretty sm:text-7xl">
-                  We’re changing the way people connect
+                  {/* We’re changing the way people connect */}
+                  Technology-Powered Creativity
                 </h1>
                 <p className="mt-8 text-lg font-medium text-gray-500 text-pretty sm:max-w-md sm:text-xl/8 lg:max-w-none">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                  amet fugiat veniam occaecat fugiat aliqua. Anim aute id magna aliqua ad ad non deserunt sunt.
+                  Shaping meaningful connections in the digital age. We focus on creating intuitive, impactful solutions that bridge the gap between brands and their users.
+
+
+
                 </p>
                 <div className="flex items-center mt-10 gap-x-6">
                   <a
@@ -139,7 +141,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
                   >
                     Get started
                   </a>
-                  <a href="#" className="font-semibold text-gray-900 text-sm/6">
+                  <a href="#" className="font-semibold text-indigo-600 text-sm/6">
                     Live demo <span aria-hidden="true">→</span>
                   </a>
                 </div>
@@ -149,7 +151,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
                   <div className="relative">
                     <img
                       alt=""
-                      src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                      src="https://res.cloudinary.com/dbtnomqnj/image/upload/v1702315018/from_model/ujid3cx1dxocbfrfld6w.png"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="absolute inset-0 pointer-events-none rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -159,7 +161,8 @@ export default async function Page({ params: { locale } }: HomeProps) {
                   <div className="relative">
                     <img
                       alt=""
-                      src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                      // src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                      src="https://res.cloudinary.com/dbtnomqnj/image/upload/v1701917430/from_model/bwscncbyp0i9o7kexfkr.png"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="absolute inset-0 pointer-events-none rounded-xl ring-1 ring-inset ring-gray-900/10" />

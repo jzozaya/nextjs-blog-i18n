@@ -97,15 +97,13 @@ export default function RootLayout({
         <TwSizeIndicator />
         <ThemeProvider>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
-          {/* <SectionContainer> */}
-            <div className="flex flex-col justify-between h-screen font-sans">
-              <SearchProvider>
-                <Header />
-                <main className="mb-auto">{children}</main>
-              </SearchProvider>
-              <Footer />
-            </div>
-          {/* </SectionContainer> */}
+          <div className="flex flex-col justify-between h-screen font-sans">
+            <SearchProvider>
+              <Header />
+              <main className="mb-auto">{children}</main>
+            </SearchProvider>
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>
