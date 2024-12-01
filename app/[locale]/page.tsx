@@ -17,9 +17,6 @@ export default async function Page({ params: { locale } }: HomeProps) {
   return (
     <>
 
-      
-
-
       <div className="relative overflow-hidden isolate pt-14">
         <img
           alt=""
@@ -85,14 +82,12 @@ export default async function Page({ params: { locale } }: HomeProps) {
         </div>
       </div>
 
-        
-
       {hasFeaturedPosts && <FeaturedLayout posts={hasFeaturedPosts} params={{ locale }} />}
 
       <div className="relative isolate">
         <svg
           aria-hidden="true"
-          className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
+          className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-indigo-800/40 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
         >
           <defs>
             <pattern
@@ -106,7 +101,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
               <path d="M.5 200V.5H200" fill="none" />
             </pattern>
           </defs>
-          <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
+          <svg x="50%" y={-1} className="overflow-visible fill-gray-500/15">
             <path
               d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
               strokeWidth={0}
@@ -130,7 +125,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
           <div className="px-6 pb-32 mx-auto max-w-7xl pt-36 sm:pt-60 lg:px-8 lg:pt-32">
             <div className="max-w-2xl mx-auto gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
               <div className="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
-                <h1 className="text-5xl font-semibold tracking-tight text-gray-900 text-pretty sm:text-7xl">
+                <h1 className="text-5xl font-semibold tracking-tight text-white text-pretty sm:text-7xl">
                   We’re changing the way people connect
                 </h1>
                 <p className="mt-8 text-lg font-medium text-gray-500 text-pretty sm:max-w-md sm:text-xl/8 lg:max-w-none">
