@@ -140,7 +140,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
                   >
                     Get started
                   </a>
-                  <a href="/blog/moleskine-shopify" className="font-semibold text-indigo-600 text-sm/6">
+                  <a href="https://www.dynamicpeace.app/" className="font-semibold text-indigo-600 text-sm/6">
                     Live demo <span aria-hidden="true">→</span>
                   </a>
                 </div>
