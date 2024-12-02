@@ -3,6 +3,7 @@ import { allBlogs } from 'contentlayer/generated'
 import FeaturedLayout from '@/layouts/FeaturedLayout'
 import HomeLayout from '@/layouts/HomeLayout'
 import { LocaleTypes } from './i18n/settings'
+import { createTranslation } from '../[locale]/i18n/server'
 
 type HomeProps = {
   params: { locale: LocaleTypes }
@@ -13,6 +14,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
   const posts = allCoreContent(sortedPosts)
   const filteredPosts = posts.filter((p) => p.language === locale)
   const hasFeaturedPosts = filteredPosts.filter((p) => p.featured === true)
+  const { t } = await createTranslation(locale, 'home')
 
   return (
     <>
@@ -21,7 +23,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
         <img
           alt=""
           src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-          className="absolute inset-0 object-cover opacity-75 -z-10 size-full"
+          className="absolute inset-0 object-cover opacity-70 -z-10 size-full"
         />
         <div
           aria-hidden="true"
@@ -48,10 +50,10 @@ export default async function Page({ params: { locale } }: HomeProps) {
             </div> */}
             <div className="text-center">
               <h1 className="text-5xl font-semibold tracking-tight text-white text-balance sm:text-7xl">
-                Turning bold ideas into seamless digital experiences
+                {t('hero-h1')}
               </h1>
               <p className="mt-8 text-lg font-medium text-gray-400 text-pretty sm:text-xl/8">
-                From immersive AI-driven campaigns to tools that empower content creators, I design and develop innovative solutions that connect brands with their audience—effortlessly.
+                {t('hero-sub')}
               </p>
               <div className="flex items-center justify-center mt-10 gap-x-6">
                 <a
