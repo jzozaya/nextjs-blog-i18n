@@ -130,7 +130,8 @@ export default async function Page({ params: { locale } }: HomeProps) {
                   {t('section-h2')}
                 </h2>
                 <p className="mt-8 text-lg font-medium text-gray-500 text-pretty sm:max-w-md sm:text-xl/8 lg:max-w-none">
-                  Shaping meaningful connections in the digital age. With focus on creating intuitive, impactful solutions that bridge the gap between brands and their users.
+                  {/* Shaping meaningful connections in the digital age. With focus on creating intuitive, impactful solutions that bridge the gap between brands and their users. */}
+                  {t('section-sub')}
                 </p>
                 <div className="flex items-center mt-10 gap-x-6">
                   <a
