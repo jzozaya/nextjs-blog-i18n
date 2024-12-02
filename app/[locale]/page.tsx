@@ -17,11 +17,11 @@ export default async function Page({ params: { locale } }: HomeProps) {
   return (
     <>
 
-      <div className="relative overflow-hidden isolate pt-14">
+      <div className="relative pt-4 mb-16 overflow-hidden isolate">
         <img
           alt=""
           src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-          className="absolute inset-0 object-cover -z-10 size-full"
+          className="absolute inset-0 object-cover opacity-75 -z-10 size-full"
         />
         <div
           aria-hidden="true"
@@ -37,7 +37,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
         </div>
         <div className="px-6 mx-auto max-w-7xl lg:px-8">
           <div className="max-w-2xl py-32 mx-auto sm:py-48 lg:py-56">
-            <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+            {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative px-3 py-1 text-gray-400 rounded-full text-sm/6 ring-1 ring-white/10 hover:ring-white/20">
                 Announcing our next round of funding.{' '}
                 <a href="#" className="font-semibold text-white">
@@ -45,7 +45,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
                   Read more <span aria-hidden="true">&rarr;</span>
                 </a>
               </div>
-            </div>
+            </div> */}
             <div className="text-center">
               <h1 className="text-5xl font-semibold tracking-tight text-white text-balance sm:text-7xl">
                 Turning bold ideas into seamless digital experiences
@@ -100,7 +100,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
               <path d="M.5 200V.5H200" fill="none" />
             </pattern>
           </defs>
-          <svg x="50%" y={-1} className="overflow-visible fill-gray-500/15">
+          <svg x="50%" y={-1} className="overflow-visible fill-gray-500/5">
             <path
               d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
               strokeWidth={0}
@@ -129,7 +129,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
                   Technology-Powered Creativity
                 </h1>
                 <p className="mt-8 text-lg font-medium text-gray-500 text-pretty sm:max-w-md sm:text-xl/8 lg:max-w-none">
-                  Shaping meaningful connections in the digital age. We focus on creating intuitive, impactful solutions that bridge the gap between brands and their users.
+                  Shaping meaningful connections in the digital age. With focus on creating intuitive, impactful solutions that bridge the gap between brands and their users.
 
 
 
@@ -152,6 +152,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
                     <img
                       alt=""
                       src="https://res.cloudinary.com/dbtnomqnj/image/upload/v1702315018/from_model/ujid3cx1dxocbfrfld6w.png"
+                      // src="https://res.cloudinary.com/dbtnomqnj/image/upload/v1702315018/from_model/ujid3cx1dxocbfrfld6w.png"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="absolute inset-0 pointer-events-none rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -170,7 +171,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
                   <div className="relative">
                     <img
                       alt=""
-                      src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
+                      src="https://res.cloudinary.com/dbtnomqnj/image/upload/v1713226978/BlazePose_gr3erj.png"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="absolute inset-0 pointer-events-none rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -180,7 +181,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
                   <div className="relative">
                     <img
                       alt=""
-                      src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
+                      src="https://res.cloudinary.com/dbtnomqnj/image/upload/v1733159748/portfolio/439310387_901118335122567_5634400937475890433_n_cluebw.jpg"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="absolute inset-0 pointer-events-none rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -188,7 +189,8 @@ export default async function Page({ params: { locale } }: HomeProps) {
                   <div className="relative">
                     <img
                       alt=""
-                      src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                      src="https://res.cloudinary.com/dbtnomqnj/image/upload/v1733159748/portfolio/438900028_1147241576410575_281381099067307229_n_r48ogc.jpg"
+                      // src="https://res.cloudinary.com/dbtnomqnj/image/upload/v1708391547/quantitative-dancefloors/color_refe_5_qdqkq8.gif"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="absolute inset-0 pointer-events-none rounded-xl ring-1 ring-inset ring-gray-900/10" />
