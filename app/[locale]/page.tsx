@@ -23,7 +23,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
         <img
           alt=""
           src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-          className="absolute inset-0 object-cover opacity-70 -z-10 size-full"
+          className="absolute inset-0 object-cover opacity-20 dark:opacity-70 -z-10 size-full"
         />
         <div
           aria-hidden="true"
@@ -38,7 +38,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
           />
         </div>
         <div className="px-6 mx-auto max-w-7xl lg:px-8">
-          <div className="max-w-2xl py-32 mx-auto sm:py-48 lg:py-56">
+          <div className="max-w-4xl py-32 mx-auto sm:py-48 lg:py-56">
             {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative px-3 py-1 text-gray-400 rounded-full text-sm/6 ring-1 ring-white/10 hover:ring-white/20">
                 Announcing our next round of funding.{' '}
@@ -49,10 +49,10 @@ export default async function Page({ params: { locale } }: HomeProps) {
               </div>
             </div> */}
             <div className="text-center">
-              <h1 className="text-5xl font-semibold tracking-tight text-white text-balance sm:text-7xl">
+              <h1 className="text-5xl font-semibold tracking-tight text-indigo dark:text-white text-balance sm:text-7xl">
                 {t('hero-h1')}
               </h1>
-              <p className="mt-8 text-lg font-medium text-gray-400 text-pretty sm:text-xl/8">
+              <p className="mt-8 text-lg font-medium text-gray-500 text-pretty sm:text-xl/8">
                 {t('hero-sub')}
               </p>
               <div className="flex items-center justify-center mt-10 gap-x-6">
@@ -126,7 +126,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
           <div className="px-6 pb-32 mx-auto max-w-7xl pt-36 sm:pt-60 lg:px-8 lg:pt-32">
             <div className="max-w-2xl mx-auto gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
               <div className="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
-                <h2 className="text-5xl font-semibold tracking-tight text-white text-pretty sm:text-7xl dark:text-primary-700">
+                <h2 className="text-5xl font-semibold tracking-tight text-indigo text-pretty sm:text-7xl dark:text-white">
                   {t('section-h2')}
                 </h2>
                 <p className="mt-8 text-lg font-medium text-gray-500 text-pretty sm:max-w-md sm:text-xl/8 lg:max-w-none">

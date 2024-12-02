@@ -41,7 +41,7 @@ const ThemeSwitch = () => {
 
   return (
     <div ref={menubarRef} className="mr-5">
-      <Menu as="div" className="relative mt-1 inline-block text-left">
+      <Menu as="div" className="relative inline-block mt-1 text-left">
         <MenuButton aria-label={t('theme')}>
           <DarkModeSwitch
             checked={darkModeChecked}
@@ -60,7 +60,7 @@ const ThemeSwitch = () => {
           leaveFrom="opacity-100 scale-100 translate-y-0"
           leaveTo="opacity-0 scale-95 translate-y-[10px]"
         >
-          <MenuItems className="absolute right-0 z-50 mt-2 w-32 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-gray-800">
+          <MenuItems className="absolute right-0 z-50 w-32 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-gray-800">
             <RadioGroup value={theme} onChange={handleThemeChange}>
               <div className="p-1">
                 <Radio value="light">
@@ -74,7 +74,7 @@ const ThemeSwitch = () => {
                             : 'hover:bg-gray-100 dark:hover:bg-gray-600'
                         } group flex w-full items-center rounded-md px-2 py-2 text-sm hover:text-primary-500 dark:hover:text-primary-500`}
                       >
-                        <Sun className="h-6 w-6" />
+                        <Sun className="w-6 h-6" />
                         <span className="ml-2">{t('light')}</span>
                       </button>
                     )}
@@ -91,7 +91,7 @@ const ThemeSwitch = () => {
                             : 'hover:bg-gray-100 dark:hover:bg-gray-600'
                         } group flex w-full items-center rounded-md px-2 py-2 text-sm hover:text-primary-500 dark:hover:text-primary-500`}
                       >
-                        <Moon className="h-6 w-6" />
+                        <Moon className="w-6 h-6" />
                         <span className="ml-2">{t('dark')}</span>
                       </button>
                     )}
@@ -108,7 +108,7 @@ const ThemeSwitch = () => {
                             : 'hover:bg-gray-100 dark:hover:bg-gray-600'
                         } group flex w-full items-center rounded-md px-2 py-2 text-sm hover:text-primary-500 dark:hover:text-primary-500`}
                       >
-                        <Monitor className="h-6 w-6" />
+                        <Monitor className="w-6 h-6" />
                         <span className="ml-2">{t('system')}</span>
                       </button>
                     )}
