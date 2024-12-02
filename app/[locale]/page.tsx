@@ -4,6 +4,7 @@ import FeaturedLayout from '@/layouts/FeaturedLayout'
 import HomeLayout from '@/layouts/HomeLayout'
 import { LocaleTypes } from './i18n/settings'
 import { createTranslation } from '../[locale]/i18n/server'
+// import Audioplayer from '@/components/mdxcomponents/Audioplayer'
 
 type HomeProps = {
   params: { locale: LocaleTypes }
@@ -18,7 +19,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
 
   return (
     <>
-
+      
       <div className="relative pt-4 mb-16 overflow-hidden isolate">
         <img
           alt=""
@@ -48,6 +49,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
                 </a>
               </div>
             </div> */}
+            {/* <Audioplayer src='https://res.cloudinary.com/dbtnomqnj/video/upload/v1733180097/portfolio/Interactive_Dance_Tracker_with_MoveNet_ppnl3d.wav' /> */}
             <div className="text-center">
               <h1 className="text-5xl font-semibold tracking-tight text-indigo dark:text-white text-balance sm:text-7xl">
                 {t('hero-h1')}
