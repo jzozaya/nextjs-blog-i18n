@@ -5,16 +5,28 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 // You might need to insert additional domains in script-src if you are using external services
+// const ContentSecurityPolicy = `
+//   default-src 'self';
+//   script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app analytics.umami.is statichunt.com http://www.youtube.com;
+//   style-src 'self' 'unsafe-inline';
+//   img-src * blob: data: statichunt.com;
+//   media-src 'self' *.s3.amazonaws.com;
+//   connect-src * statichunt.com;
+//   font-src 'self';
+//   frame-src giscus.app https://www.youtube.com/ https://www.youtube-nocookie.com/
+// `;
+
 const ContentSecurityPolicy = `
   default-src 'self';
   script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app analytics.umami.is statichunt.com http://www.youtube.com;
   style-src 'self' 'unsafe-inline';
   img-src * blob: data: statichunt.com;
-  media-src 'self' *.s3.amazonaws.com;
+  media-src 'self' *.s3.amazonaws.com https://res.cloudinary.com https://cdn.sanity.io;
   connect-src * statichunt.com;
   font-src 'self';
   frame-src giscus.app https://www.youtube.com/ https://www.youtube-nocookie.com/
 `;
+
 
 const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
