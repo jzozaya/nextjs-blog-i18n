@@ -126,10 +126,9 @@ export default async function Page({ params: { locale } }: HomeProps) {
           <div className="px-6 pb-32 mx-auto max-w-7xl pt-36 sm:pt-60 lg:px-8 lg:pt-32">
             <div className="max-w-2xl mx-auto gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
               <div className="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
-                <h1 className="text-5xl font-semibold tracking-tight text-white text-pretty sm:text-7xl">
-                  {/* We’re changing the way people connect */}
-                  Technology-Powered Creativity
-                </h1>
+                <h2 className="text-5xl font-semibold tracking-tight text-white text-pretty sm:text-7xl dark:text-primary-700">
+                  {t('section-h2')}
+                </h2>
                 <p className="mt-8 text-lg font-medium text-gray-500 text-pretty sm:max-w-md sm:text-xl/8 lg:max-w-none">
                   Shaping meaningful connections in the digital age. With focus on creating intuitive, impactful solutions that bridge the gap between brands and their users.
                 </p>
@@ -151,7 +150,6 @@ export default async function Page({ params: { locale } }: HomeProps) {
                     <img
                       alt=""
                       src="https://res.cloudinary.com/dbtnomqnj/image/upload/v1702315018/from_model/ujid3cx1dxocbfrfld6w.png"
-                      // src="https://res.cloudinary.com/dbtnomqnj/image/upload/v1702315018/from_model/ujid3cx1dxocbfrfld6w.png"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="absolute inset-0 pointer-events-none rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -167,13 +165,13 @@ export default async function Page({ params: { locale } }: HomeProps) {
                     />
                     <div className="absolute inset-0 pointer-events-none rounded-xl ring-1 ring-inset ring-gray-900/10" />
                   </div>
-                  <div className="relative">
+                  <div className="relative top-6">
                     <img
                       alt=""
                       src="https://res.cloudinary.com/dbtnomqnj/image/upload/v1713226978/BlazePose_gr3erj.png"
-                      className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                      className="aspect-[2.7/3] w-full object-cover scale-110"
                     />
-                    <div className="absolute inset-0 pointer-events-none rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                    {/* <div className="absolute inset-0 pointer-events-none rounded-xl ring-1 ring-inset ring-gray-900/10" /> */}
                   </div>
                 </div>
                 <div className="flex-none pt-32 space-y-8 w-44 sm:pt-0">
