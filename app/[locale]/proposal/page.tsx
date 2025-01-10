@@ -71,9 +71,9 @@ export default async function Page({ params: { locale } }: HomeProps) {
 
 
 
-          <p className="font-semibold text-indigo-600 text-base/7">Time Estimate</p>
-          <div className="max-w-2xl mt-10">
-            <h2 className="mt-16 text-3xl font-semibold tracking-tight text-gray-900 text-pretty">
+          <div className="max-w-2xl mt-16">
+            <p className="font-semibold text-indigo-600 text-base/7">Time Estimate</p>
+            <h2 className="mt-2 text-3xl font-semibold tracking-tight text-gray-900 text-pretty">
               Project Breakdown
             </h2>
 
@@ -182,10 +182,6 @@ export default async function Page({ params: { locale } }: HomeProps) {
             </ul>
 
           </div>
-
-
-
-
 
 
 
@@ -433,8 +429,6 @@ function SimpleTable() {
 }
 
 
-// import {ChevronRightIcon} from '@heroicons/react/20/solid'
-
 const people = [
   {
     name: 'Leslie Alexander',
@@ -443,7 +437,7 @@ const people = [
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     href: '#',
-    lastSeen: '3h ago',
+    lastSeen: null,
     lastSeenDateTime: '2023-01-23T13:23Z',
   },
   {
@@ -485,16 +479,7 @@ const people = [
     lastSeen: '3h ago',
     lastSeenDateTime: '2023-01-23T13:23Z',
   },
-  {
-    name: 'Tom Cook',
-    email: 'tom.cook@example.com',
-    role: 'Director of Product',
-    imageUrl:
-      'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    href: '#',
-    lastSeen: null,
-  },
-]
+  ]
 
 function ExamplePeople() {
   return (
