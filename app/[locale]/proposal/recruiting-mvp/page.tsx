@@ -192,7 +192,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
                   <strong className="font-semibold text-gray-900">Cost Breakdown:</strong>
                   <ul className="pl-6 space-y-2 list-disc">
                     <li>Low Range: $85,000–$95,000 (streamlined with minimal features).</li>
-                    <li>Mid Range: $100,000–$125,000 (polished MVP with core features).</li>
+                    <li>Mid Range: $100,000–$135,000 (polished MVP with core features).</li>
                     <li>High Range: $200,000+ (for advanced features like messaging).</li>
                   </ul>
                 </span>
