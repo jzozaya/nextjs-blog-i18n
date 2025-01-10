@@ -179,7 +179,7 @@ const publishingOptions = [
   { title: 'Draft', description: 'This job posting will no longer be publicly accessible.', current: false },
 ]
 
-export function SelectMenu() {
+function SelectMenu() {
   const [selected, setSelected] = useState(publishingOptions[0])
 
   return (
@@ -227,7 +227,7 @@ const plans = [
   },
 ]
 
-export function SimpleTable() {
+function SimpleTable() {
   return (
     <fieldset aria-label="Pricing plans" className="relative -space-y-px bg-white rounded-md">
       {plans.map((plan) => (
@@ -271,7 +271,7 @@ const plansTwo = [
   { name: 'Enterprise', ram: '32GB', cpus: '12 CPUs', disk: '1024 GB SSD disk', price: '$240' },
 ]
 
-export  function ExampleTablePlans() {
+function ExampleTablePlans() {
   const [selectedTwo, setSelectedTwo] = useState(plansTwo[0])
 
   return (
