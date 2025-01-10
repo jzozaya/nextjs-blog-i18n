@@ -57,34 +57,42 @@ export default async function Page({ params: { locale } }: HomeProps) {
             <li className="flex gap-x-3">
               <CheckCircleIcon aria-hidden="true" className="flex-none mt-1 text-indigo-600 size-5" />
               <span>
-                <strong className="font-semibold text-gray-900">Intuitivo:</strong> Seamless job posting and application management.
+                <strong className="font-semibold text-gray-900">Intuitive:</strong> Seamless job posting and application management.
               </span>
             </li>
             <li className="flex gap-x-3">
               <CheckCircleIcon aria-hidden="true" className="flex-none mt-1 text-indigo-600 size-5" />
               <span>
-                <strong className="font-semibold text-gray-900">Scalable:</strong> Ac tincidunt sapien vehicula erat
-                auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                <strong className="font-semibold text-gray-900">Scalable:</strong> Built to grow with your needs, allowing the integration of new features and capabilities as your business evolves.
               </span>
             </li>
           </ul>
 
 
-
+          <br />
           <div className="max-w-2xl mt-16">
-            <p className="font-semibold text-indigo-600 text-base/7">Time Estimate</p>
+            <p className="font-semibold text-indigo-600 text-base/7">Project Breakdown</p>
             <h2 className="mt-2 text-3xl font-semibold tracking-tight text-gray-900 text-pretty">
-              Project Breakdown
+              Time Estimate
             </h2>
 
             <ul role="list" className="max-w-xl mt-8 space-y-8 text-gray-600">
               {[
                 {
-                  title: "Project Setup & Planning (1–2 weeks)",
+                  title: "Project Setup & Planning (1 week)",
                   details: [
                     "Set up the development environment.",
+                    "Design core user flows (wireframes/mockups) using components from Tailwind UI.",
                     "Define database schema for Supabase (users, job postings, applications, etc.).",
-                    "Design core user flows (wireframes/mockups)."
+                  ],
+                },
+                {
+                  title: "Organizations Module (2 weeks)",
+                  details: [
+                    "Dashboard for organizations:",
+                    "Job posting creation and editing.",
+                    "List of active/inactive job postings.",
+                    "Basic candidate management."
                   ],
                 },
                 {
@@ -95,16 +103,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
                   ],
                 },
                 {
-                  title: "Organizations Module (2–3 weeks)",
-                  details: [
-                    "Dashboard for organizations:",
-                    "Job posting creation and editing.",
-                    "List of active/inactive job postings.",
-                    "Basic candidate management."
-                  ],
-                },
-                {
-                  title: "Talent Module (2–3 weeks)",
+                  title: "Talent Module (2 weeks)",
                   details: [
                     "Profile creation and editing.",
                     "Job search and filtering.",
@@ -150,20 +149,20 @@ export default async function Page({ params: { locale } }: HomeProps) {
               Cost Estimate
             </h2>
             <ul role="list" className="max-w-xl mt-8 space-y-8 text-gray-600">
-              <li className="flex gap-x-3">
+              {/* <li className="flex gap-x-3">
                 <CheckCircleIcon aria-hidden="true" className="flex-none mt-1 text-indigo-600 size-5" />
                 <span>
                   <strong className="font-semibold text-gray-900">Hourly Rate Consideration:</strong> For a skilled full-stack developer, rates range from $50–$150 (USD).
                 </span>
-              </li>
+              </li> */}
               <li className="flex gap-x-3">
                 <CheckCircleIcon aria-hidden="true" className="flex-none mt-1 text-indigo-600 size-5" />
                 <span>
                   <strong className="font-semibold text-gray-900">Cost Breakdown:</strong>
                   <ul className="pl-6 space-y-2 list-disc">
-                    <li>Low Range: $5,000–$8,000 (streamlined with minimal features).</li>
-                    <li>Mid Range: $10,000–$15,000 (polished MVP with core features).</li>
-                    <li>High Range: $20,000+ (for advanced features like messaging).</li>
+                    <li>Low Range: $75,000–$90,000 (streamlined with minimal features).</li>
+                    <li>Mid Range: $100,000–$125,000 (polished MVP with core features).</li>
+                    <li>High Range: $200,000+ (for advanced features like messaging).</li>
                   </ul>
                 </span>
               </li>
@@ -180,10 +179,14 @@ export default async function Page({ params: { locale } }: HomeProps) {
                 </span>
               </li>
             </ul>
-
           </div>
 
 
+          <p className="mt-8">
+            This platform aims to redefine how the advertising industry connects employers and talent, offering a modern, efficient, and engaging recruitment experience that sets the stage for successful collaborations.
+
+
+          </p>
 
 
 
@@ -201,37 +204,29 @@ export default async function Page({ params: { locale } }: HomeProps) {
             <li className="flex gap-x-3">
               <CheckCircleIcon aria-hidden="true" className="flex-none mt-1 text-indigo-600 size-5" />
               <span>
-                <strong className="font-semibold text-gray-900">Phase 1.</strong> Lorem ipsum, dolor sit amet
-                consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
-                blanditiis ratione.
+                <strong className="font-semibold text-gray-900">Phase 1.</strong> 
               </span>
             </li>
             <li className="flex gap-x-3">
               <CheckCircleIcon aria-hidden="true" className="flex-none mt-1 text-indigo-600 size-5" />
               <span>
-                <strong className="font-semibold text-gray-900">Pahse 2.</strong> Anim aute id magna aliqua ad ad non
-                deserunt sunt. Qui irure qui lorem cupidatat commodo.
+                <strong className="font-semibold text-gray-900">Pahse 2.</strong> 
               </span>
             </li>
             <li className="flex gap-x-3">
               <CheckCircleIcon aria-hidden="true" className="flex-none mt-1 text-indigo-600 size-5" />
               <span>
-                <strong className="font-semibold text-gray-900">Phase 3.</strong> Ac tincidunt sapien vehicula erat
-                auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                <strong className="font-semibold text-gray-900">Phase 3.</strong> 
               </span>
             </li>
           </ul>
 
-          <p className="mt-8">
-            Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor
-            fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac
-            adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
-          </p>
+
 
 
 
           {/* Puzzle pieces */}
-          <div className='flex flex-row justify-between flex-1 my-16'>
+          <div className='flex flex-row justify-between flex-1 max-w-sm my-16'>
             <SelectMenu />
 
             <SelectMenu />
@@ -249,7 +244,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
 
 
 
-          <h2 className="mt-16 text-3xl font-semibold tracking-tight text-gray-900 text-pretty">
+          {/* <h2 className="mt-16 text-3xl font-semibold tracking-tight text-gray-900 text-pretty">
             Phase 1
           </h2>
           <p className="mt-6">
@@ -267,7 +262,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
             Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed tellus
             mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis
             ipsum eu a sed convallis diam.
-          </p>
+          </p> */}
 
 
 
@@ -276,9 +271,10 @@ export default async function Page({ params: { locale } }: HomeProps) {
 
 
           <h2 className="mt-16 text-3xl font-semibold tracking-tight text-gray-900 text-pretty">
-            From beginner to expert in 3 hours
+            {/* From beginner to expert in 3 hours */}
+            Agentic Research Flow
           </h2>
-          <p className="mt-6">
+          {/* <p className="mt-6">
             Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh.
             Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed tellus
             mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis
@@ -306,7 +302,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
           <p className="mt-10">
             Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae
             sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.
-          </p>
+          </p> */}
         </div>
         <figure className="mt-16">
           <img
@@ -319,7 +315,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
             Agentic Research Flow.
           </figcaption>
         </figure>
-        <div className="max-w-2xl mt-16">
+        {/* <div className="max-w-2xl mt-16">
           <h2 className="text-3xl font-semibold tracking-tight text-gray-900 text-pretty">
             Everything you need to get up and running
           </h2>
@@ -333,7 +329,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
             Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae
             sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   )
@@ -357,7 +353,7 @@ function SelectMenu() {
         <select
           id="location"
           name="location"
-          defaultValue="Canada"
+          defaultValue="Mexico"
           className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
         >
           <option>United States</option>
@@ -479,7 +475,7 @@ const people = [
     lastSeen: '3h ago',
     lastSeenDateTime: '2023-01-23T13:23Z',
   },
-  ]
+]
 
 function ExamplePeople() {
   return (
