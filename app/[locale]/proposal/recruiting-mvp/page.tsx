@@ -14,6 +14,8 @@ import Link from 'next/link'
 // import Audioplayer from '@/components/mdxcomponents/Audioplayer'
 import { CheckCircleIcon, InformationCircleIcon } from '@heroicons/react/20/solid'
 
+import { Radio, RadioGroup } from '@headlessui/react'
+
 import { useState } from 'react'
 import { Label, Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react'
 import { CheckIcon, ChevronDownIcon } from '@heroicons/react/20/solid'
@@ -39,7 +41,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
           Overview
         </h1>
         <p className="mt-6 text-xl/8">
-          To build a dynamic, user-centric platform that streamlines the recruitment process for the advertising industry. This MVP will serve as a modern headhunter agency, empowering organizations to discover top talent and enabling candidates to showcase their skills and apply to relevant job opportunities effortlessly.
+          To build a dynamic, user-centric platform that streamlines the recruitment process for the advertising industry. This MVP will serve as a modern solution, empowering organizations to discover top talent and enabling candidates to showcase their skills and apply to relevant job opportunities.
 
 
         </p>
@@ -85,14 +87,19 @@ export default async function Page({ params: { locale } }: HomeProps) {
           {/* Puzzle pieces */}
 
 
-          <div className='flex flex-col my-16 border'>
-            
+          <div className='flex flex-col my-16'>
             
             <SelectMenu />
 
             <br />
+            <br />
 
             <SimpleTable />
+
+            <br />
+            <br />
+
+            <ExampleTablePlans />
 
           </div>
 
@@ -251,6 +258,58 @@ export function SimpleTable() {
           </span>
         </label>
       ))}
+    </fieldset>
+  )
+}
+
+
+
+const plansTwo = [
+  { name: 'Hobby', ram: '8GB', cpus: '4 CPUs', disk: '160 GB SSD disk', price: '$40' },
+  { name: 'Startup', ram: '12GB', cpus: '6 CPUs', disk: '256 GB SSD disk', price: '$80' },
+  { name: 'Business', ram: '16GB', cpus: '8 CPUs', disk: '512 GB SSD disk', price: '$160' },
+  { name: 'Enterprise', ram: '32GB', cpus: '12 CPUs', disk: '1024 GB SSD disk', price: '$240' },
+]
+
+export  function ExampleTablePlans() {
+  const [selectedTwo, setSelectedTwo] = useState(plansTwo[0])
+
+  return (
+    <fieldset aria-label="Server size">
+      <RadioGroup value={selectedTwo} onChange={setSelectedTwo} className="space-y-4">
+        {plansTwo.map((options) => (
+          <Radio
+            key={options.name}
+            value={options}
+            aria-label={options.name}
+            aria-description={`${options.ram}, ${options.cpus}, ${options.disk}, ${options.price} per month`}
+            className="group relative block cursor-pointer rounded-lg border border-gray-300 bg-white px-6 py-4 shadow-sm focus:outline-none data-[focus]:border-indigo-600 data-[focus]:ring-2 data-[focus]:ring-indigo-600 sm:flex sm:justify-between"
+          >
+            <span className="flex items-center">
+              <span className="flex flex-col text-sm">
+                <span className="font-medium text-gray-900">{options.name}</span>
+                <span className="text-gray-500">
+                  <span className="block sm:inline">
+                    {options.ram} / {options.cpus}
+                  </span>{' '}
+                  <span aria-hidden="true" className="hidden sm:mx-1 sm:inline">
+                    &middot;
+                  </span>{' '}
+                  <span className="block sm:inline">{options.disk}</span>
+                </span>
+              </span>
+            </span>
+            <span className="flex mt-2 text-sm sm:ml-4 sm:mt-0 sm:flex-col sm:text-right">
+              <span className="font-medium text-gray-900">{options.price}</span>
+              <span className="ml-1 text-gray-500 sm:ml-0">/mo</span>
+            </span>
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute -inset-px rounded-lg border-2 border-transparent group-data-[focus]:border group-data-[checked]:border-indigo-600"
+            />
+          </Radio>
+        ))}
+      </RadioGroup>
     </fieldset>
   )
 }
