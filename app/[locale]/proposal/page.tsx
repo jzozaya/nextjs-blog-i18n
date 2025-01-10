@@ -103,6 +103,13 @@ export default async function Page({ params: { locale } }: HomeProps) {
                   ],
                 },
                 {
+                  title: "Stripe Integration (1 week)",
+                  details: [
+                    "Set up Stripe for handling payments.",
+                    "Implement business logic for organizations."
+                  ],
+                },
+                {
                   title: "Talent Module (2 weeks)",
                   details: [
                     "Profile creation and editing.",
@@ -229,7 +236,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
           <div className='flex flex-row justify-between flex-1 max-w-sm my-16'>
             <SelectMenu />
 
-            <SelectMenu />
+            {/* <SelectMenu /> */}
           </div>
 
           <div className='flex flex-col my-16'>
