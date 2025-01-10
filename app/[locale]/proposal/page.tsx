@@ -152,6 +152,30 @@ export default async function Page({ params: { locale } }: HomeProps) {
               ))}
             </ul>
 
+
+            <h2 className="mt-16 text-3xl font-semibold tracking-tight text-gray-900 text-pretty">
+              Look and Feel
+            </h2>
+
+            {/* Puzzle pieces */}
+            <div className='flex flex-row justify-between flex-1 max-w-sm my-16'>
+              <SelectMenu />
+
+              {/* <SelectMenu /> */}
+            </div>
+
+            <div className='flex flex-col my-16'>
+              <SimpleTable />
+              {/* <ExampleTablePlans /> */}
+            </div>
+
+            <div className='flex flex-col my-16'>
+              <ExamplePeople />
+            </div>
+
+
+
+
             <h2 className="mt-16 text-3xl font-semibold tracking-tight text-gray-900 text-pretty">
               Cost Estimate
             </h2>
@@ -180,8 +204,8 @@ export default async function Page({ params: { locale } }: HomeProps) {
                   <ul className="pl-6 space-y-2 list-disc">
                     <li>Feature complexity, such as advanced analytics.</li>
                     <li>Custom UI/UX components.</li>
-                    <li>Revisions and testing needs.</li>
-                    <li>Third-party integrations (e.g., external APIs).</li>
+                    {/* <li>Revisions and testing needs.</li>
+                    <li>Third-party integrations (e.g., external APIs).</li> */}
                   </ul>
                 </span>
               </li>
@@ -191,13 +215,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
 
           <p className="mt-8">
             This platform aims to redefine how the advertising industry connects employers and talent, offering a modern, efficient, and engaging recruitment experience that sets the stage for successful collaborations.
-
-
           </p>
-
-
-
-
 
 
 
@@ -205,48 +223,34 @@ export default async function Page({ params: { locale } }: HomeProps) {
             Scope of Work
           </h2>
 
-
-
           <ul role="list" className="max-w-xl mt-8 space-y-8 text-gray-600">
             <li className="flex gap-x-3">
               <CheckCircleIcon aria-hidden="true" className="flex-none mt-1 text-indigo-600 size-5" />
               <span>
-                <strong className="font-semibold text-gray-900">Phase 1.</strong> 
+                <strong className="font-semibold text-gray-900">Phase 1.</strong> to be defined based on the project requirements and specifications.
               </span>
             </li>
             <li className="flex gap-x-3">
               <CheckCircleIcon aria-hidden="true" className="flex-none mt-1 text-indigo-600 size-5" />
               <span>
-                <strong className="font-semibold text-gray-900">Pahse 2.</strong> 
+                <strong className="font-semibold text-gray-900">Pahse 2.</strong> to be defined.
               </span>
             </li>
             <li className="flex gap-x-3">
               <CheckCircleIcon aria-hidden="true" className="flex-none mt-1 text-indigo-600 size-5" />
               <span>
-                <strong className="font-semibold text-gray-900">Phase 3.</strong> 
+                <strong className="font-semibold text-gray-900">Phase 3.</strong> to be defined.
               </span>
             </li>
           </ul>
 
 
+          {/* <br />
+          <h2 className="mt-16 text-3xl font-semibold tracking-tight text-gray-900 text-pretty">
+            Look and Feel
+          </h2> */}
 
 
-
-          {/* Puzzle pieces */}
-          <div className='flex flex-row justify-between flex-1 max-w-sm my-16'>
-            <SelectMenu />
-
-            {/* <SelectMenu /> */}
-          </div>
-
-          <div className='flex flex-col my-16'>
-            <SimpleTable />
-            {/* <ExampleTablePlans /> */}
-          </div>
-
-          <div className='flex flex-col my-16'>
-            <ExamplePeople />
-          </div>
 
 
 
