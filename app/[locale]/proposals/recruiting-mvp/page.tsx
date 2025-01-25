@@ -4,20 +4,15 @@ import { sortPosts, allCoreContent } from 'pliny/utils/contentlayer'
 import { allBlogs } from 'contentlayer/generated'
 import FeaturedLayout from '@/layouts/FeaturedLayout'
 import HomeLayout from '@/layouts/HomeLayout'
-// import { LocaleTypes } from './i18n/settings'
-
 import { LocaleTypes } from 'app/[locale]/i18n/settings'
-
-
 import { createTranslation } from 'app/[locale]/i18n/server'
 import Link from 'next/link'
 import { CheckCircleIcon, ChevronRightIcon } from '@heroicons/react/20/solid'
-
 import { Radio, RadioGroup } from '@headlessui/react'
 
 import { useState } from 'react'
-import { Label, Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react'
-import { CheckIcon, ChevronDownIcon } from '@heroicons/react/20/solid'
+// import { Label, Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react'
+// import { CheckIcon, ChevronDownIcon } from '@heroicons/react/20/solid'
 
 
 
