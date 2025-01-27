@@ -13,6 +13,53 @@ summary: This web app enabled users to scan their purchase receipts to earn poin
 
 Desarrollé una aplicación web móvil para Magnum, utilizando tecnología de Reconocimiento Óptico de Caracteres (OCR) para mejorar la participación de los usuarios y aumentar las ventas de productos. La aplicación permitía a los usuarios registrarse con su correo electrónico y contraseña, y luego subir fotos de sus recibos de compra. Esto les permitía participar en un juego interactivo donde podían ganar puntos canjeables por premios emocionantes, incluyendo tarjetas de regalo y un viaje a Francia. Esta campaña fue una colaboración estratégica entre Walmart y Unilever para promover el lanzamiento de una nueva línea de productos, Magnum Mini.
 
+![OCR Web App for Magnum](https://res.cloudinary.com/dbtnomqnj/image/upload/v1733964391/portfolio/Screenshot_2024-12-11_at_4.41.12_PM_wtuziw.jpg)
+
+
+```mermaid
+
+                   +-----------------------+
+                   |  User Lands on        |
+                   |  Homepage             |
+                   +-----------------------+
+                             |
+                             v
+                   +-----------------------+
+                   |  Sign Up / Login      |
+                   |  (Email & Password)   |
+                   +-----------------------+
+                             |
+                             v
+                   +-----------------------+
+                   |  Upload Receipt       |
+                   |  (Photo Submission)   |
+                   +-----------------------+
+                             |
+                             v
+                   +-----------------------+
+                   |   Cloudinary API      |
+                   |  (Extract Text Nodes) |
+                   +-----------------------+
+                             |
+                             v
+                   +-----------------------+
+                   |  Validate Receipt     |
+                   |  (Walmart Ticket?)    |
+                   +-----------------------+
+                            / \
+                   Yes     /   \        No
+                          v     v
+    +-------------------+       +---------------------------+
+    | Play Interactive  |       | Return to Previous Screen |
+    | Game (Earn Points)|       | (Invalid Receipt Message) |
+    +-------------------+       +---------------------------+
+                             |
+                             v
+                   +-----------------------+
+                   |  Redeem Points        |
+                   |  (Gift Cards / Trip)  |
+                   +-----------------------+
+```
 
 ## Key Features
 
@@ -26,6 +73,7 @@ Desarrollé una aplicación web móvil para Magnum, utilizando tecnología de Re
 
 + Canje de Premios: Los puntos podían usarse para participar en un sorteo de un viaje a Europa o canjear tarjetas de regalo.
 
+![OCR Web App for Magnum](https://res.cloudinary.com/dbtnomqnj/image/upload/v1733964389/portfolio/Screenshot_2024-12-11_at_4.41.52_PM_phib7b.jpg)
 
 
 ## Tecnologías y Skills
