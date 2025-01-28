@@ -69,15 +69,17 @@ export default async function Page({ params: { locale } }: HomeProps) {
                 >
                   Get started
                 </Link>
-                {/* <a
-                    href="#"
-                    className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-                  >
-                    Get started
-                  </a> */}
-                <a href="#" className="font-semibold text-white text-sm/6">
+                <Link
+                  href={`/${locale}/blog`}
+                  className="font-semibold text-white text-sm/6"
+                >
                   Learn more <span aria-hidden="true">→</span>
-                </a>
+                </Link>
+
+
+                {/* <a href="#" className="font-semibold text-white text-sm/6">
+                  Learn more <span aria-hidden="true">→</span>
+                </a> */}
               </div>
             </div>
           </div>
