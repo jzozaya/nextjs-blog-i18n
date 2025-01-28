@@ -149,13 +149,23 @@ export default async function Page({ params: { locale } }: HomeProps) {
                   {t('section-sub')}
                 </p>
                 <div className="flex items-center mt-10 gap-x-6">
-                  <a
+
+                  {/* <a
                     href="#"
                     className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Get started
-                  </a>
-                  <a href="https://www.dynamicpeace.app/" className="font-semibold text-indigo-600 text-sm/6">
+                  </a> */}
+
+                  <Link
+                    href={`/${locale}/blog`}
+                    className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+
+                  >
+                    Get started
+                  </Link>
+
+                  <a href="https://www.dynamicpeace.app/" target='_blank' className="font-semibold text-indigo-600 text-sm/6">
                     Live demo <span aria-hidden="true">→</span>
                   </a>
                 </div>
