@@ -71,7 +71,7 @@ export default async function Page({ params: { locale } }: HomeProps) {
                 </Link>
                 <Link
                   href={`/${locale}/blog`}
-                  className="font-semibold text-white text-sm/6"
+                  className="font-semibold text-indigo-600 text-sm/6 dark:text-white"
                 >
                   Learn more <span aria-hidden="true">→</span>
                 </Link>
