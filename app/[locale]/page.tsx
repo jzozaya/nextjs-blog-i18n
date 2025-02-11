@@ -20,14 +20,12 @@ export default async function Page({ params: { locale } }: HomeProps) {
 
   return (
     <>
-
-
-
-      <div className="relative pt-4 mb-16 overflow-hidden isolate">
+      <div className="relative pt-4 mb-16 overflow-hidden bg-gray-900 isolate">
         <img
           alt=""
           src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-          className="absolute inset-0 object-cover opacity-20 dark:opacity-70 -z-10 size-full"
+          // src="https://res.cloudinary.com/dbtnomqnj/image/upload/v1739214927/portfolio/ashish-kumar-senapati-FTUSP0ZH49I-unsplash_sjw7nb.jpg"
+          className="absolute inset-0 object-cover opacity-20 dark:opacity-70 -z-10 size-full blur-sm"
         />
         <div
           aria-hidden="true"
